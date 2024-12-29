@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>기본 레이아웃_시멘틱태그</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+        }
+
+        header {
+            background-color: gray;
+            text-align: center;
+            padding: 25px;
+        }
+
+        .navbar {
+            background-color: bisque;
+            height: 50px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .navbar > ul {
+            display: flex;
+            gap: 150px;
+            color: white;
+            list-style: none;
+            text-decoration: none;
+        }
+
+        .navbar > img {
+            max-width: 50px;
+            display: inline-block;
+        }
+
+        .navbar > ul > li > a {
+            color: black;
+            text-decoration: none;
+        }
+
+        aside {
+            width: 20%;
+            padding: 10px;
+        }
+
+        section {
+            width: 40%;
+            padding: 10px;
+        }
+
+        article {
+            width: 40%;
+            padding: 10px;
+        }
+
+        footer {
+            background-color: gray;
+            text-align: center;
+            padding: 25px;
+        }
+
+        @media screen and (max-width: 600px) {
+            .navbar > ul {
+                flex-direction: column;
+                gap: 10px;
+                align-items: center;
+            }
+
+            aside,
+            section,
+            article {
+                width: 100%; /* 너비 100%로 설정 */
+                padding: 5px; /* 여백 조정 */
+            }
+
+            .navbar img {
+                display: none; /* 모바일에서 이미지 숨기기 */
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h2>header</h2>
+    </header>
+    <nav class="navbar">
+        <img src="logo.png" alt="Logo">
+        <ul>
+            <li><a href="#">홈</a></li>
+            <li><a href="#">자기소개서</a></li>
+            <li><a href="#">포트폴리오</a></li>
+            <li><a href="#">연락처</a></li>
+        </ul>
+    </nav>
+    <main>
+        <aside>
+            <h2>this is aside</h2>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nulla eos qui unde distinctio iure dolore quis
+                ab dolorem labore accusamus, repudiandae quaerat quam officia vero ipsam necessitatibus dignissimos,
+                minus cum?</p>
+        </aside>
+        <section>
+            <h2>this is section</h2>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Beatae quisquam autem cumque? Quod, sunt
+                ducimus. Consequatur magni eum quae asperiores, quos, consequuntur repellendus culpa commodi quaerat
+                necessitatibus maiores quisquam eos.</p>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Beatae quisquam autem cumque? Quod, sunt
+                ducimus. Consequatur magni eum quae asperiores, quos, consequuntur repellendus culpa commodi quaerat
+                necessitatibus maiores quisquam eos.</p>
+        </section>
+        <article>
+            <h2>this is article</h2>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Beatae quisquam autem cumque? Quod, sunt
+                ducimus. Consequatur magni eum quae asperiores, quos, consequuntur repellendus culpa commodi quaerat
+                necessitatibus maiores quisquam eos.</p>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Beatae quisquam autem cumque? Quod, sunt
+                ducimus. Consequatur magni eum quae asperiores, quos, consequuntur repellendus culpa commodi quaerat
+                necessitatibus maiores quisquam eos.</p>
+        </article>
+    </main>
+    <footer>
+    </footer>
+</body>
+
+</html>

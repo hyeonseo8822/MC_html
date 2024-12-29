@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>layout_시멘틱태그</title>
+    <style>
+        header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            background-color: bisque;
+
+        }
+        .gnb_nav_menu {
+            display: flex;
+            gap: 60px;
+        }
+        section {
+            display: flex;
+            background-color: brown;
+            min-height: 900px;
+        }
+        aside {
+            width:300px;
+            background-color: cadetblue;
+            padding : 20px;
+        }
+        .content {
+            margin-left: 20px;
+        }
+        footer {
+            display: flex;
+            background-color: chocolate;
+            align-items: center;
+            justify-content: space-between;
+            padding: 20px 10.5%;
+            font-size: 14px;
+            font-weight: 500px;
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1>logo</h1>
+        <nav>
+            <ul class="gnb_nav_menu">
+                <li>프론트</li>
+                <li>HTML</li>
+                <li>레이아웃</li>
+            </ul>
+        </nav>
+        <button>로그인</button>
+    </header>
+    <section>
+        <aside>
+            <p>
+                aside title
+            </p>
+        </aside>
+        <div class="content">
+            <h2>main title</h2>
+        </div>
+    </section>
+    <footer>
+        <p>회사이름</p>
+        <address>서울 관악구 호암로 546</address>
+    </footer>
+</body>
+</html>

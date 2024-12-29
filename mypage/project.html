@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>프로젝트페이지</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            background-color: #f3f5a4;
+        }
+
+        header {
+            background-color: rgb(166, 214, 234);
+            text-align: center;
+            padding: 25px;
+        }
+
+        .navbar {
+            background-color: rgb(218, 255, 196);
+            height: 50px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .navbar>ul {
+            display: flex;
+            gap: 50px;
+            list-style: none;
+        }
+
+        .navbar>ul>li>a {
+            color: rgb(122, 122, 122);
+            font-weight: bold;
+            text-decoration: none;
+            font-size: 18px;
+            padding: 10px;
+            transition: color 0.2s ease, background-color 0.2s ease;
+        }
+
+        .navbar>ul>li>a:hover {
+            color: rgb(52, 52, 52);
+            background-color: rgba(148, 147, 147, 0.1);
+            border-radius: 5px;
+        }
+
+        aside,
+        section,
+        article {
+            padding: 20px;
+            margin: 20px auto;
+            background: white;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+            max-width: 80%;
+        }
+
+        aside>h3,
+        section>h3,
+        article>h3 {
+            color: rgb(152, 137, 212);
+            font-size: 25px;
+            margin-bottom: 15px;
+        }
+
+        aside>ul>li,
+        section>ul>li,
+        article>ul>li {
+            font-size: 17px;
+            color: rgb(255, 106, 163);
+            margin-bottom: 10px;
+        }
+
+        aside>ul,
+        section>ul,
+        article>ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        aside>ul>p,
+        section>ul>p,
+        article>ul>p {
+            margin-top: 10px;
+            color: rgb(100, 100, 100);
+            line-height: 1.5;
+        }
+
+        footer {
+            background-color: rgb(166, 214, 234);
+            text-align: center;
+            padding: 20px;
+            color: white;
+            margin-top: 20px;
+            font-size: 20px;
+            font-weight: bold;
+        }
+
+        header>h2 {
+            color: white;
+            font-size: 30px;
+        }
+
+        .navbar>img {
+            width: 90px;
+            height: 100px;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h2>Hyunseo's Portfolio</h2>
+    </header>
+    <nav class="navbar">
+        <img src="hamster.png" alt="Hamster">
+        <ul>
+            <li><a href="index.html">Introduction</a></li>
+            <li><a href="project.html">Projects</a></li>
+            <li><a href="goal.html">Goals</a></li>
+            <li><a href="contest.html">Contests</a></li>
+        </ul>
+    </nav>
+    <main>
+        <aside>
+            <h3>Nugget</h3>
+            <ul>
+                <li>Project Overview</li>
+                <p>너겟은 사용자가 하루에 한 번 지식을 얻을 수 있는 앱입니다. <br> 이 앱은 매일 새로운 정보나 지식을 제공하며, 사용자는 매일 아침마다 간단한 퀴즈나 팁을 통해 지식을 확장할 수 있습니다.</p>
+                <li>Main Features</li>
+                <p>하루 한 번의 지식 제공: 사용자가 하루에 한 번 새로운 정보를 받을 수 있도록 알림 기능이 구현되어 있습니다.<br>퀴즈 및 팁 제공: 사용자는 다양한 분야에 대한 퀴즈나 유용한 팁을 통해 새로운 지식을 얻습니다.</p>
+                <li>Tech Stack</li>
+                <p>이 프로젝트는 JavaScript, HTML, CSS를 사용하여 웹 기반으로 개발되었습니다. 서버 측에는 간단한 파일 저장 방식을 사용하여 데이터를 관리합니다.</p>
+            </ul>
+        </aside>
+        
+        <section>
+            <h3>Mini Games</h3>
+            <ul>
+                <li>Project Overview</li>
+                <p>미니게임 앱은 슈팅 게임과 지렁이 게임을 포함한 앱입니다.<br> 이 앱은 간단한 게임들을 제공하여 사용자들이 즐거운 시간을 보낼 수 있도록 합니다.</p>
+                <li>Main Features</li>
+                <p>슈팅 게임: 사용자는 적을 처치하며 점수를 얻고, 게임에서 승리하기 위한 목표를 가지고 플레이합니다.<br>지렁이 게임: 지렁이가 성장하며 장애물을 피하고 음식을 먹어가며 점수를 높입니다. 간단한 컨트롤과 도전적인 요소가 특징입니다.</p>
+                <li>Tech Stack</li>
+                <p>이 프로젝트는 Java Swing을 사용하여 GUI 기반의 게임으로 개발되었습니다. 각 게임은 키보드 입력을 받아서 캐릭터를 움직이는 방식으로 구현되었습니다.</p>
+            </ul>
+        </section>
+        
+        <article>
+            <h3>Notepad</h3>
+            <ul>
+                <li>Project Overview</li>
+                <p>메모장 앱은 Java Swing을 사용하여 만든 간단한 메모 앱입니다.<br>사용자는 텍스트를 작성하고, 이를 로컬에 저장하여 언제든지 불러올 수 있습니다. 직관적인 인터페이스로 손쉽게 메모를 작성할 수 있습니다.</p>
+                <li>Main Features</li>
+                <p>메모 작성: 사용자는 텍스트 박스에 내용을 작성하고 저장할 수 있습니다.<br>메모 불러오기: 저장된 메모를 앱에서 불러와서 다시 확인하거나 수정할 수 있습니다.</p>
+                <li>Tech Stack</li>
+                <p>메모장 앱은 Java Swing을 사용하여 GUI를 구성하고, 로컬 저장소에 데이터를 저장하기 위해 파일 시스템을 활용했습니다.</p>
+            </ul>
+        </article>
+        
+    </main>
+    
+    <footer>
+        Contact: 010-0000-0000
+    </footer>
+    
+    
+</body>
+
+</html>

@@ -1,0 +1,51 @@
+<!-- 1118 조현서 -->
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>시멘틱 태그_header 예제</title>
+    <style>
+        body {
+            margin: 0 auto;
+        }
+        header {
+            display: flex;
+            background-color: aqua;
+            justify-content: space-between;
+            padding: 20px 10%;
+            align-items: center;
+            height: 60px;
+
+        }
+        .gnb_nav_menu{
+            display : flex;
+            gap : 40px;
+        }
+        header > nav > ul > li > a {
+            color: black;
+            text-decoration: none;
+        }
+        header > nav > ul > li > a:hover {
+            font-weight: bolder;
+            color: skyblue;
+        }
+        header > h1 {
+            color: black;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>logo</h1> <!-- 로고 (이미지) 자리-->
+        <nav>
+            <ul class = "gnb_nav_menu">
+                <li><a href="#">프론트</a></li>
+                <li><a href="#">html</a></li>
+                <li><a href="#">레이아웃</a></li>
+                <button type="button">로그인</button>
+            </ul>
+        </nav>
+    </header>
+</body>
+</html>

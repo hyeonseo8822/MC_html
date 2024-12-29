@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>가상 요소</title>
+    <style>
+       h1::first-letter {
+        color: red;
+        font-size: 1.8em;
+        font-family: initial;
+       }
+       p::first-line {
+        color: blue;
+       }
+       #fruit li::before {
+        content: "✔️";
+       }
+       #apple::after {
+        content: "🍎";
+       } 
+       #cheery::after {
+        content: "🍒";
+       } 
+       #grape::after {
+        content: "🍇";
+       } 
+    </style>
+</head>
+<body>
+    <h1>Hello</h1>
+    
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis nam alias obcaecati at quam commodi? Aut ut eligendi, ex quaerat possimus, earum eius a aperiam incidunt autem doloribus optio provident?</p>
+
+    <ul id="fruit">
+        <li id="apple">apple</li>
+        <li id="cheery">cheery</li>
+        <li id="grape">grape</li>
+    </ul>
+</body>
+</html>

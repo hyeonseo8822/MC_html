@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>자기소개페이지</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            background-color: #f3f5a4;
+        }
+
+        header {
+            background-color: rgb(166, 214, 234);
+            text-align: center;
+            padding: 25px;
+        }
+
+        .navbar {
+            background-color: rgb(218, 255, 196);
+            height: 50px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .navbar>ul {
+            display: flex;
+            gap: 50px;
+            list-style: none;
+        }
+
+        .navbar>ul>li>a {
+            color: rgb(122, 122, 122);
+            font-weight: bold;
+            text-decoration: none;
+            font-size: 18px;
+            padding: 10px;
+            transition: color 0.2s ease, background-color 0.2s ease;
+        }
+
+        .navbar>ul>li>a:hover {
+            color: rgb(52, 52, 52);
+            background-color: rgba(148, 147, 147, 0.1);
+            border-radius: 5px;
+        }
+
+        aside,
+        section,
+        article {
+            padding: 20px;
+            margin: 20px auto;
+            background: white;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+            max-width: 80%;
+        }
+
+        aside>h3,
+        section>h3,
+        article>h3 {
+            color: rgb(152, 137, 212);
+            font-size: 25px;
+            margin-bottom: 15px;
+        }
+
+        aside>ul>li,
+        section>ul>li,
+        article>ul>li {
+            font-size: 17px;
+            color: rgb(255, 106, 163);
+            margin-bottom: 10px;
+        }
+
+        aside>ul,
+        section>ul,
+        article>ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        aside>ul>p,
+        section>ul>p,
+        article>ul>p {
+            margin-top: 10px;
+            color: rgb(100, 100, 100);
+            line-height: 1.5;
+        }
+
+        footer {
+            background-color: rgb(166, 214, 234);
+            text-align: center;
+            padding: 10px;
+            color: white;
+            margin-top: 20px;
+            font-size: 20px;
+            font-weight: bold;
+        }
+
+        header>h2 {
+            color: white;
+            font-size: 30px;
+        }
+
+        .navbar>img {
+            width: 90px;
+            height: 100px;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h2>Hyunseo's Portfolio</h2>
+    </header>
+    <nav class="navbar">
+        <img src="hamster.png" alt="Hamster">
+        <ul>
+            <li><a href="index.html">Introduction</a></li>
+            <li><a href="project.html">Projects</a></li>
+            <li><a href="goal.html">Goals</a></li>
+            <li><a href="contest.html">Contests</a></li>
+        </ul>
+    </nav>
+    <main>
+        <aside>
+            <h3>Misochallenge</h3>
+            <ul>
+                <li>Contest Overview</li>
+                <p>미소챌은 교내에서 열린 공모전</p>
+                <li>Project Overview</li>
+                <p>앱 이름은 '너겟'으로, 사용자가 매일 간단한 퀴즈나 팁을 통해 지식을 얻을 수 있는 앱입니다. 이 앱은 사용자에게 하루에 한 번 새로운 정보나 지식을 알림을 통해 제공하며, 퀴즈나
+                    팁을 제공하여 흥미를 유발합니다.</p>
+                <li>Results</li>
+                <p>'너겟' 앱은 미소챌 공모전에서 2위를 수상하였습니다. 이 경험을 통해 앱 개발 및 아이디어 구현 능력을 키울 수 있었고, 실제로 사용자의 관심을 끌 수 있는 기능을 구현하는 데 큰
+                    성과를 이루었습니다.</p>
+            </ul>
+        </aside>
+
+        <section>
+            <h3>Disaster Public Safety Data Utilization Startup Contest</h3>
+            <ul>
+                <li>Contest Overview</li>
+                <p>재난공공안전데이터 국가 공모전은 재난 관리 및 안전을 위한 아이디어를 제시하는 대회</p>
+                <li>Project Overview</li>
+                <p>제안한 프로젝트는 'SRG(Smart Rainwater Gathering)'라는 시스템으로, 빗물을 모아서 재활용하는 아이디어입니다. 이 시스템은 재난 시 빗물을 수집하고, 이를
+                    활용하여 안전한 물 공급을 가능하게 합니다. 이 프로젝트는 실질적인 재난 안전 해결책을 제공하는 것을 목표로 했습니다.</p>
+                <li>Results</li>
+                <p>SRG 프로젝트는 재난공공안전데이터 국가 공모전에서 본선에 진출하였습니다. 이 경험을 통해 재난 관리 분야에 대한 깊은 이해를 얻었고, 사회적 문제 해결에 기여하는 아이디어를
+                    구체화할 수 있었습니다.</p>
+            </ul>
+        </section>
+
+        <article>
+            <h3>AppJam Hackathon</h3>
+            <ul>
+                <li>Contest Overview</li>
+                <p>앱잼은 다양한 학교 학생들이 모여 앱 개발 아이디어를 공유하고 협업하는 해커톤 대회</p>
+                <li>Project Overview</li>
+                <p>앱잼에서는 '일기를 분석하고 음식을 추천해주는 앱'을 만들었습니다. 이 앱은 사용자가 작성한 일기를 분석하여, 그날의 기분이나 건강 상태에 맞는 음식을 추천해주는 기능을 제공합니다.
+                    사용자의 감정 상태나 건강 정보를 바탕으로 맞춤형 음식을 제안하여, 보다 건강한 삶을 지원하는 앱입니다.</p>
+                <li>Results</li>
+                <p>앱잼에서는 수상하지 못했지만, 다양한 팀과의 협업을 통해 실질적인 경험을 쌓을 수 있었고, 네트워킹을 통해 서로의 아이디어와 경험을 나누는 기회를 가졌습니다. 다양한 배경을 가진
+                    학생들과 협력하여 실제 앱을 개발하는 데 큰 의미가 있었습니다.</p>
+            </ul>
+        </article>
+    </main>
+
+    <footer>
+        Contact: 010-0000-0000
+    </footer>
+
+</body>
+
+</html>

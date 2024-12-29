@@ -1,0 +1,51 @@
+<!-- 1118 조현서 -->
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>인라인 블록 요소</title>
+    <style>
+        .gallery {
+            display: inline-block;
+            border: 2px solid hsl(0, 0%, 60%);
+            width: 200px; 
+            margin: 10px; 
+            vertical-align: top; 
+        }
+        .gallery img {
+            width: 100%; 
+            height: auto; 
+        }
+        .gallery .description {
+            padding: 10px;
+            text-align: center;
+        }
+        .gallery:hover {
+            border-color: hsl(0, 0%, 40%); 
+        }
+    </style> 
+</head>
+<body>
+    <div class="gallery">
+        <a href="1.png" target="_blank">
+            <img src="1.png" alt="별">
+        </a>
+        <div class="description">별</div>
+    </div>
+
+    <div class="gallery">
+        <a href="2.png" target="_blank">
+            <img src="2.png" alt="나의 별">
+        </a>
+        <div class="description">나의 별</div>
+    </div>
+
+    <div class="gallery">
+        <a href="3.png" target="_blank">
+            <img src="3.png" alt="너의 별">
+        </a>
+        <div class="description">너의 별</div>
+    </div>
+</body>
+</html>

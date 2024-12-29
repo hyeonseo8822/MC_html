@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>프로젝트페이지</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            background-color: #f3f5a4;
+        }
+
+        header {
+            background-color: rgb(166, 214, 234);
+            text-align: center;
+            padding: 25px;
+        }
+
+        .navbar {
+            background-color: rgb(218, 255, 196);
+            height: 50px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .navbar>ul {
+            display: flex;
+            gap: 50px;
+            list-style: none;
+        }
+
+        .navbar>ul>li>a {
+            color: rgb(122, 122, 122);
+            font-weight: bold;
+            text-decoration: none;
+            font-size: 18px;
+            padding: 10px;
+            transition: color 0.2s ease, background-color 0.2s ease;
+        }
+
+        .navbar>ul>li>a:hover {
+            color: rgb(52, 52, 52);
+            background-color: rgba(148, 147, 147, 0.1);
+            border-radius: 5px;
+        }
+        
+        aside,
+        section,
+        article {
+            padding: 20px;
+            margin: 20px auto;
+            background: white;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+            max-width: 80%;
+        }
+
+        aside>h3,
+        section>h3,
+        article>h3 {
+            color: rgb(152, 137, 212);
+            font-size: 25px;
+            margin-bottom: 15px;
+        }
+
+        aside>ul>li,
+        section>ul>li,
+        article>ul>li {
+            font-size: 17px;
+            color: rgb(255, 106, 163);
+            margin-bottom: 10px;
+        }
+
+        aside>ul,
+        section>ul,
+        article>ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        aside>ul>p,
+        section>ul>p,
+        article>ul>p {
+            margin-top: 10px;
+            color: rgb(100, 100, 100);
+            line-height: 1.5;
+        }
+
+        footer {
+            background-color: rgb(166, 214, 234);
+            text-align: center;
+            padding: 20px;
+            color: white;
+            margin-top: 20px;
+            font-size: 20px;
+            font-weight: bold;
+        }
+
+        header>h2 {
+            color: white;
+            font-size: 30px;
+        }
+
+        .navbar>img {
+            width: 90px;
+            height: 100px;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h2>Hyunseo's Portfolio</h2>
+    </header>
+    <nav class="navbar">
+        <img src="hamster.png" alt="Hamster">
+        <ul>
+            <li><a href="index.html">Introduction</a></li>
+            <li><a href="project.html">Projects</a></li>
+            <li><a href="goal.html">Goals</a></li>
+            <li><a href="contest.html">Contests</a></li>
+        </ul>
+    </nav>
+    <main>
+        <aside>
+            <h3>App Development</h3>
+            <ul>
+                <li>Objective Overview</li>
+                <p>앱 개발은 제가 가장 열정을 가지고 있는 목표입니다. 다양한 사람들에게 유용하고 직관적인 앱을 만드는 것이 목표입니다. 이를 위해 최신 기술을 배우고 여러 플랫폼에서 앱을 개발하여 기술을 향상시키고자 합니다.</p>
+                <li>Key Activities</li>
+                <p>앱 개발을 위한 학습: 다양한 언어와 프레임워크를 공부하며 실습을 통해 실력을 키웁니다.<br>프로젝트 경험: 실제 앱을 개발하고 출시하여 피드백을 받아 개선하는 경험을 쌓습니다.</p>
+                <li>Tech Stack</li>
+                <p>앱 개발에 사용하려는 기술은 Android (Java, Kotlin), iOS (Swift), Flutter, Firebase 등이 포함됩니다. 백엔드 개발에는 Node.js와 Firebase를 고려하고 있습니다.</p>
+            </ul>
+        </aside>
+    
+        <section>
+            <h3>Stable Employment</h3>
+            <ul>
+                <li>Objective Overview</li>
+                <p>안정적인 취업은 제 직업적 목표 중 하나입니다. IT 분야에서 경력을 쌓아 안정적인 직장을 얻고 전문적인 개발자로 성장하고자 합니다.</p>
+                <li>Key Activities</li>
+                <p>취업 준비: 필요한 자격증을 취득하고 경력을 쌓으며 면접 준비를 철저히 합니다.<br>네트워킹: IT 관련 행사와 커뮤니티 활동에 참여하여 네트워크를 넓히고 취업 기회를 확보합니다.</p>
+                <li>Tech Stack</li>
+                <p>안정적인 취업을 위해 프로그래밍 언어와 프레임워크에 대한 이해를 높이고 최신 기술 트렌드에 맞춰 기술 스택을 지속적으로 갱신할 것입니다. 예를 들어, Java, Kotlin, Python, JavaScript 등을 사용할 예정입니다.</p>
+            </ul>
+        </section>
+    
+        <article>
+            <h3>Health Management</h3>
+            <ul>
+                <li>Objective Overview</li>
+                <p>건강 관리는 제 중요한 목표 중 하나입니다. 정신적, 신체적 건강을 유지하는 것은 학업과 직장 생활에서 성공하기 위해 필수적이라고 믿습니다.</p>
+                <li>Key Activities</li>
+                <p>규칙적인 운동: 꾸준히 운동하여 체력을 유지하고 스트레칭과 유산소 운동을 병행합니다.<br>균형 잡힌 식단: 건강한 식습관을 유지하며 정기적인 건강 검진을 통해 상태를 점검합니다.</p>
+                <li>Tech Stack</li>
+                <p>건강 관리를 위해 피트니스 트래킹 앱과 식단 관리 앱을 활용하며, 이러한 기술들은 피트니스 관련 앱 개발 시 참고할 수 있습니다.</p>
+            </ul>
+        </article>
+    
+        <footer>
+            Contact: 010-0000-0000
+        </footer>    
+</body>
+
+</html>

@@ -1,0 +1,48 @@
+<!-- 1118 조현서 -->
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flex 실습</title>
+    <style>
+        .container {
+            display: flex;
+            flex-wrap: nowrap;
+            flex-direction: row;
+            border: 2px solid black;
+            height: 90vh;
+            justify-content: space-between;
+            column-gap: 3em;
+        }
+        .box {
+            width: 150px;
+            height: 150px;
+            border : 1px solid black;
+            font-size: 8em;
+            border-radius: 15px;
+            text-align: center;
+        }
+        #box1 {
+            background-color: darkred;
+        }
+        #box2 {
+            background-color: darkgoldenrod;
+        }
+        #box3 {
+            background-color: darkgreen;
+        }
+        #box4 {
+            background-color: darkblue;
+        }
+    </style>
+</head>
+<body>
+    <div class ="container">
+        <div class="box" id="box1">1</div>
+        <div class="box" id="box2">2</div>
+        <div class="box" id="box3">3</div>
+        <div class="box" id="box4">4</div>
+    </div>
+</body>
+</html>

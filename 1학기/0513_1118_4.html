@@ -1,0 +1,27 @@
+<!-- 작성자 : 1118 조현서 -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS 산택지 조합</title>
+    <style>
+         ul strong{color: blue;}
+         div > strong {background-color: yellow;}
+         * {font-size: 30px;}
+    </style>
+</head>
+<body>
+    <h2>1학기 내용</h2>
+    <hr>
+    <div>
+        <div>미디어콘텐츠일반 <strong>학습내용</strong></div>
+        <ul>
+            <li>HTML</li>
+            <li><strong>CSS</strong></li>
+            <li>JAVASCRIPT</li>
+        </ul>
+        <div>60점 이하는 F!</div>
+    </div>
+</body>
+</html>
